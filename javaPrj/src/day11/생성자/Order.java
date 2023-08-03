@@ -20,8 +20,6 @@ public class Order {
 		System.out.println(name);
 		System.out.println(date);
 		System.out.println(address);
-		
-		return id + " " + name +" "+tostring(date);
 	}
 }
 
