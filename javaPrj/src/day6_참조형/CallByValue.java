@@ -2,15 +2,17 @@ package day6_참조형;
 
 public class CallByValue {
 	//CallByValue : 값을 보내는 것
+	//수정해도 원본값은 수정안됨
 	
 	public static void main(String[] args) {
 		int su1=9, su2 = 5;
 		int sum = su1 + su2;
-		
+	
 		System.out.println(sum);
 		
 		int su3 = 5, su4 = 6;
 		int result = adder(su3, su4);
+		System.out.println(su1);
 		System.out.println(result);
 	}
 	//반환은 무조건 1개
@@ -23,7 +25,7 @@ public class CallByValue {
 	
 	public static int adder(int su1, int su2) {
 		int sum = su1 + su2;
-		
+		su1 = 5;
 		return sum;
 	}
 

@@ -2,6 +2,7 @@ package day6_참조형;
 
 public class CallByReference {
 	//CallByReference : 주소를 보내는 것
+	//주소값을 주기 떄문에 원본 값이 수정됨
 	
 	public static void main(String[] args) {
 		int[] arr = {10,9,8,5};
@@ -14,7 +15,7 @@ public class CallByReference {
 	}
 	
 	public static void input(int[] a) {
-		//주소를 가져와서 넣어준다
+		//해당 주소값에 넣어준다
 		a[0] = 10;
 		a[1] = 90;
 		a[2] = 80;
